@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { Identicon } from "@/components/Identicon";
 
-export default function LandingPage() {
+export default function Page() {
   return (
     <div className="relative overflow-hidden">
       {/* HERO SECTION */}
