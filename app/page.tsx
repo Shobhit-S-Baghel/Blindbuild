@@ -17,10 +17,14 @@ import {
   XCircle,
 } from "lucide-react";
 import { Identicon } from "@/components/Identicon";
+import { BlindBuildWordmark } from "@/components/BlindBuildWordmark";
 
 export default function LandingPage() {
   return (
     <div className="relative overflow-hidden">
+      {/* Interactive TechText Wordmark Overlay with scroll/swipe dismiss & 60s inactivity reappearance */}
+      <BlindBuildWordmark />
+
       {/* HERO SECTION */}
       <section className="relative pt-16 pb-20 sm:pt-24 sm:pb-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Anti-Bias Badge */}
