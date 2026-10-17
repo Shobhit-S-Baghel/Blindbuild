@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 import { AppProvider } from "@/context/AppContext";
 import { Navbar } from "@/components/Navbar";
 import { ToastContainer } from "@/components/ToastContainer";
