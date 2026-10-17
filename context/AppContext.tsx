@@ -12,6 +12,11 @@ interface ToastMessage {
   detectedPatterns?: string[];
 }
 
+/**
+ * Application Context Interface
+ * Encapsulates global state for anonymous builder sessions, presentation demo mode,
+ * autonomous guardrail log drawer toggles, and toast notification queues.
+ */
 interface AppContextType {
   currentBuilder: AnonymousBuilder | null;
   setCurrentBuilder: (b: AnonymousBuilder | null) => void;
@@ -27,6 +32,11 @@ interface AppContextType {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
+/**
+ * AppProvider Component
+ * Manages client-side persistence in localStorage, hydrates active anonymous builder profiles,
+ * and coordinates system events across routes.
+ */
 export function AppProvider({ children }: { children: React.ReactNode }) {
   // Default to Builder #409 on first load so user immediately sees live verified profile
   const [currentBuilder, setCurrentBuilder] = useState<AnonymousBuilder | null>(null);
