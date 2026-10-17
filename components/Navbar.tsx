@@ -15,6 +15,11 @@ import {
   Sparkles,
 } from "lucide-react";
 
+/**
+ * Primary Application Header & Navigation Bar
+ * Handles global navigation, presentation demo mode toggling,
+ * autonomous guardrail log drawer controls, and persona status display.
+ */
 export function Navbar() {
   const pathname = usePathname();
   const {

@@ -21,6 +21,11 @@ interface VerifiedStatsCardProps {
   className?: string;
 }
 
+/**
+ * VerifiedStatsCard Component
+ * Displays cryptographically signed builder metrics, language percentile ranking,
+ * verified commit history, and interactive HMAC-SHA256 tamper-proof proof modal.
+ */
 export function VerifiedStatsCard({ stats, compact = false, className = "" }: VerifiedStatsCardProps) {
   const [showModal, setShowModal] = useState(false);
 
